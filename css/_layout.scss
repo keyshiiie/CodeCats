@@ -1,0 +1,15 @@
+.login-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-row {
+  display: grid;
+  gap: 0.625rem; // 10px → 0.625rem
+}
+
+.inputs-row {
+  display: grid;
+  gap: 1.5rem; // 24px → 1.5rem
+}

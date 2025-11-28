@@ -8,17 +8,25 @@
 </head>
 <body>
     <form action="/login" method="POST">
-        <h1>Вход в систему</h1>
+        <div class="login-header-row">
+            <h1>Вход в систему</h1>
+            <span title="Чтобы узнать данные для входа — обратитесь к администратору.">
+                <img src="/img/Question.svg" alt="">
+            </span>
+        </div>
 
-        <!-- Поле для логина -->
-        <label for="login" class="label-text">Логин</label>
-        <input type="text" id="login" name="login" placeholder="Введите свой логин" required>
+        <div class="inputs-row">
+            <div class="input-row">
+                <label for="login" class="label-text">Логин</label>
+                <input type="text" id="login" name="login" placeholder="Введите свой логин" required>
 
-        <!-- Поле для пароля -->
-        <label for="password">Пароль</label>
-        <input type="password" id="password" name="password" placeholder="Введите свой пароль" required autocomplete="current-password">
-
-        <span title="Чтобы узнать данные для входа — обратитесь к администратору.">?</span>
+            </div>
+            <div class="input-row">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите свой пароль" required autocomplete="current-password">
+            </div>
+        </div>
+       
         <!-- Кнопка входа -->
         <button type="submit">Вход</button>
     </form>

@@ -1,0 +1,25 @@
+// _mixins.scss
+@mixin input-styles {
+  width: 22.5rem; // 360px → 22.5rem
+  padding: $input-padding;
+  border: 0.6px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $input-background;
+  color: $input-text-color;
+  font-weight: 500;
+  font-family: $font-body;
+}
+
+@mixin button-styles {
+  margin-top: 1.875rem; // 30px → 1.875rem
+  font-weight: 800;
+  width: 100%;
+  padding: $input-padding;
+  background-color: $primary-color;
+  border: none;
+  border-radius: $border-radius;
+  color: $text-color;
+  font-size: 1rem; // 16px → 1rem
+  cursor: pointer;
+  font-family: $font-body;
+}

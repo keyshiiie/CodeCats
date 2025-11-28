@@ -1,0 +1,31 @@
+body {
+  font-family: $font-body;
+  display: flex;
+  background-color: $background-color;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1rem; // 16px → 1rem
+  margin: 0;
+}
+
+form {
+  background-color: $form-background;
+  padding: 1.875rem; // 30px → 1.875rem
+  border: 1px solid $border-color-form;
+  border-radius: $border-radius;
+}
+
+h1 {
+  color: $text-color;
+  margin-bottom: 1.875rem; // 30px → 1.875rem
+  font-weight: 800;
+  font-size: 2rem; // 32px → 2rem
+}
+
+label {
+  display: block;
+  color: $text-color;
+  font-weight: 800;
+  font-family: $font-body;
+}

@@ -1,0 +1,30 @@
+input {
+  @include input-styles;
+
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+}
+
+button {
+  @include button-styles;
+
+  &:hover {
+    background-color: $secondary-color;
+    transition: $transition;
+  }
+}
+
+span[title] {
+  color: $text-color;
+  font-size: 1rem; // 16px → 1rem
+  margin-left: 0.3125rem; // 5px → 0.3125rem
+  cursor: help;
+  font-family: $font-body;
+}
